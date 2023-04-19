@@ -28,34 +28,44 @@ html, body {
 }
 
 body {
-    background-color: F8EEDF;
+    background-color: #F0F1F4;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Source Code Pro', monospace;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
+/* Header start */
+
 header {
-    position: fixed;
-    top: 0;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 4rem;
-    background-color: #DE7E26;
+    background: #101524;
+    color: #F0F1F4;
 }
 
 header h1 {
     padding-left: 4rem;
 }
 
-header li {
+header li, .footer-links li {
     display: inline-flex;
-    align-items: baseline;
-    justify-self: space-around;
     margin: 0 4rem;
 }
+
+/* About me start */
 
 .profile {
     object-fit: cover;
@@ -66,14 +76,16 @@ header li {
 }
 
 main {
-    margin: 10rem auto;
+    padding: 4rem 0 2rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#projects, #about {
-    margin: 0 15rem;
+/* Projects start */
+
+#projects {
+    padding: 4rem 15rem;
 }
 
 .projects-container {
@@ -92,4 +104,41 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Footer start */
+
+footer {
+    background: #F0F1F4;
+    height: 8rem;
+}
+
+.footer-icons {
+    background: #101524;
+    color: #F0F1F4;
+    padding: 1rem 0;
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+}
+
+.footer-icons i {
+    margin: 0 1rem;
+}
+
+.footer-links {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #101524;
+}
+
+/* icons grow on hover */
+.grow { 
+    transition: all .2s ease-in-out; 
+    }
+
+.grow:hover { 
+    transform: scale(1.2); 
 }
