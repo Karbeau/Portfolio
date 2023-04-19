@@ -8,7 +8,7 @@ A _Home_ page with projects that I've built
 An _About_ page
 
 ## Where can I see it?
-You can view the live website [here](https://pages.github.com/)
+You can view the live website [here](https://karbeau.github.io/Portfolio/)
 
 ## Contact
 
