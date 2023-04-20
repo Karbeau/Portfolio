@@ -33,6 +33,23 @@ body {
 
 h1, h2, h3, h4, h5, h6, a {
     font-family: 'Source Code Pro', monospace;
+    padding: 1rem 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
 }
 
 p {
@@ -141,4 +158,35 @@ footer {
 
 .grow:hover { 
     transform: scale(1.2); 
+}
+
+/* Media queries */
+
+/* Small Screens - Mobile */
+
+/* @media screen and (max-width: 900px) {
+     header {
+        width: 50px;
+      }
+} */
+
+/* Medium Screens Ipad -> laptop */
+@media screen and (max-width: 1500px) {
+    header {
+        height: auto;
+        font-size: 1.5rem;
+        width: 100vw;
+        flex-direction: column;
+        align-items: space-around;
+        justify-content: space-around;
+      }
+    
+      main {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      main .profile {
+        margin: 0;
+      }
 }
